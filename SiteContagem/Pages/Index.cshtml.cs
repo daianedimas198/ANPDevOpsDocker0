@@ -21,7 +21,7 @@ namespace SiteContagem.Pages
                 TempData["Local"] = _CONTADOR.Local;
                 TempData["Kernel"] = _CONTADOR.Kernel;
                 TempData["TargetFramework"] = _CONTADOR.TargetFramework;
-                TempData["MensagemFixa"] = "Azure DevOps + Docker";
+                TempData["MensagemFixa"] = "Azure DevOps + Docker + Kubernetes";
                 TempData["MensagemVariavel"] = configuration["MensagemVariavel"];
             }            
         }
