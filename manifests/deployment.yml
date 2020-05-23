@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: sitecontagemk8s0 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: sitecontagemk8s0 
+    spec:
+      containers:
+        - name: sitecontagemk8s0 
+          image: groffeazuredevops.azurecr.io/sitecontagemk8s0
+          ports:
+          - containerPort: 80
