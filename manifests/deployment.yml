@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: sitecontagemk8s0 
 spec:
-  replicas: 1
+  replicas: 5
   template:
     metadata:
       labels:
@@ -14,3 +14,6 @@ spec:
           image: groffeazuredevops.azurecr.io/sitecontagemk8s0
           ports:
           - containerPort: 80
+          env:
+            - name: MensagemVariavel
+              value: Utilizando o Azure Kubernetes Service (AKS) durante o Treinamento do Azure na Prática
